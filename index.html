@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color guesser</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h2 class="heading">The great</h2>
+            <h1 class="heading">RGB(<span id="red">34</span>, <span id="green">24</span>, <span id="blue">200</span>)</h1>
+            <p class="paragraph">Guessing game</p>
+        </div>
+    </header>
+    <div id="separator" style="color: black;">
+        <div class="container" style="display: flex; justify-content: space-between;">
+            <p id="mistakes">Remaining mistakes: 5</p>
+            <p id="score">Score: 0</p>
+        </div>
+    </div>
+    <main id="colors">
+        <div class="container" style="display: flex; flex-wrap: wrap;">
+            <div box-key="1" class="box wrong" onclick="submit(1)">&nbsp;</div>
+            <div box-key="2" class="box" onclick="submit(2)">&nbsp;</div>
+            <div box-key="3" class="box" onclick="submit(3)">&nbsp;</div>
+            <div box-key="4" class="box" onclick="submit(4)">&nbsp;</div>
+            <div box-key="5" class="box" onclick="submit(5)">&nbsp;</div>
+            <div box-key="6" class="box" onclick="submit(6)">&nbsp;</div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
